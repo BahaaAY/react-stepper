@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.stepper-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 50px;
+  background-color: rgb(241, 241, 241);
+}
+
+.stepper {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  width: 100%;
+}
+
+.step {
+  background-color: rgb(181, 180, 180);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+.step-active {
+  background-color: rgb(122, 55, 246);
+}
+
+.step-active:hover {
+  background-color: rgb(106, 25, 255);
+
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+button {
+  background-color: rgb(122, 55, 246);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: rgb(106, 25, 255);
+}
