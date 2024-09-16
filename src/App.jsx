@@ -1,15 +1,14 @@
 import "./App.css";
 
+const messages = ["Learn React", "Master React", "Build React Apps"];
+import { StepperList } from "./components/StepperList";
 function App() {
+  let step = 1;
   return (
     <>
       <div className="stepper-container">
-        <ul className="stepper">
-          <li className="step step-active">1</li>
-          <li className="step">2</li>
-          <li className="step">3</li>
-        </ul>
-        <h1 className="message">Step 1</h1>
+        <StepperList stepsCount={messages.length} currentStep={step} />
+        <h1 className="message">{messages[step - 1]}</h1>
         <div className="buttons-container">
           <button>Previous</button>
           <button>Next</button>
